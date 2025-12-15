@@ -4,7 +4,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Page d'exercice et de théorie
 
-[Fichier d'exercice](Exercie.md)
+[Fichier d'exercice](Exercice.md)
 
 ## Recommended IDE Setup
 
