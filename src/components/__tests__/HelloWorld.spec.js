@@ -5,7 +5,7 @@ import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld', () => {
   it('renders properly', () => {
-    const wrapper = //TODO: Créer un test de component "HelloWorld" avec un message particulier
+    const wrapper = //TODO: 1) Créer un test de component "HelloWorld" avec un message particulier
     expect(wrapper.text()).toContain('Hello Vitest')
   })
 })
