@@ -124,4 +124,31 @@ await page.getByLabel('<nom du label>').fill(<donnée>);
 ```
 
 #### Verification
-//TODO
+Avec playwright nous utiliserons `expect`
+```js
+await expect(<recupairation de l'objet>).<verification>
+```
+
+##### Vérifier si un élement contient une certaine valeur
+```js
+await expect(<recupairation de l'objet>).toHaveText('<valeur>')
+```
+
+### Exercice
+Dans ces exercices, les tests vont lancé automatiquement le serveur et va le tester sur 3 navigateur différant.
+```
+.
+└── test-ui-exercice
+    └── test
+        └── e2e
+            └── vue.spec.js
+```
+#### 1) Test du serveur
+Ce premier va test que le serveur se lance et si la page d'accueil fonctionne. Il faudra aller sur la page d'accueil `/`. 
+**But**: Aller sur la page d'accueil et que le message `You did it!` apparait.
+
+#### 2) Test du bouton count
+Dans la page d'accueil se trouve un bouton cliqueur qui permet d'incrémanter le conteur en dessous. **But**: Que le test clique sur se bouton dans la page d'accueil.
+
+#### 3) Se déplacer dans le site et remplir un formulaire
+Le site permet de se connecter grace à formulair sur la page `/form`. Dans cette exercice, le compte à entré est déjà donné **:exclamation: ne pas les chager :exclamation:**. **But**: Aller sur la page formulaire et remplir le formulaire avec les infos donné.
