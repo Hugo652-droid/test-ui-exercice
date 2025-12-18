@@ -19,6 +19,12 @@ npm run dev
 ## Des tests unitaire (Par component)
 ### Théorie
 Nous utilison Vitest un framework de test pour les application vite. Vitest ressemble grandement a Jest. Vitest permet de créer des environements pour tester les componants.
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+```sh
+npm run test:unit
+```
+
 #### Créer une suite de tests
 Les suites de tests sert a classer les tests et il serve à se retrouver dans ses tests
 ```js
@@ -76,6 +82,18 @@ Ce componant a un props `msg` qui va s'affichier dans le component. **But**: Ent
 ### Théorie de Playwright
 Playwright est un framwork pour faire des test e2e (des tests d'utilisateur final automatique). Il va lancer le site web et va tester sur différant navigateur en même temps.
 Cela fait un peux peur car il ouvre des pages sur votre pc automatiquement. Puis il va réaliser des tests sur ses navigateur et rendre un compte-rendu sur un site internet lancer automatique.
+### Run End-to-End Tests with [Playwright](https://playwright.dev)
+
+```sh
+# Install browsers for the first run
+npx playwright install
+
+# When testing on CI, must build the project first
+npm run build
+
+# Runs the end-to-end tests
+npm run test:e2e
+```
 
 #### Création d'un test
 La fonction `Test` permet a playwright de passé le test sur l'application. Nous créer un fonction async car certaine des action permene du temps. 
